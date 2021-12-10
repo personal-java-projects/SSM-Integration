@@ -28,7 +28,7 @@
 
     <!--加载映射-->
     <mappers>
-<!--        <mapper resource="com/example/AccountMapper.xml"></mapper>-->
+        <!--<mapper resource="com/example/mapper/AccountMapper.xml"></mapper>-->
         <package name="com.example.mapper"></package>
     </mappers>
 
