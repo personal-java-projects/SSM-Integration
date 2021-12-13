@@ -2,15 +2,15 @@ package com.example.domain;
 
 public class Account {
 
-    private Integer id;
+    private int id;
     private String name;
     private Double money;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -28,5 +28,14 @@ public class Account {
 
     public void setMoney(Double money) {
         this.money = money;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", money=" + money +
+                '}';
     }
 }

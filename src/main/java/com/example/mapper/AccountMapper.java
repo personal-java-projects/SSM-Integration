@@ -9,5 +9,4 @@ public interface AccountMapper {
     public void save(Account account);
 
     public List<Account> findAll();
-
 }

@@ -3,10 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mapper.AccountMapper">
-    <insert id="save" parameterType="account">
-        insert into account values(#{id},#{name},#{money})
+    <insert id="save" parameterType="Account">
+        insert into account values (#{id}, #{name}, #{money})
     </insert>
-    <select id="findAll" resultType="account">
+
+    <select id="findAll" resultType="Account">
         select * from account
     </select>
 </mapper>
