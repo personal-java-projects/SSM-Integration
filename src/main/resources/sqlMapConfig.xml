@@ -14,6 +14,7 @@
         <package name="com.example.domain"/>
     </typeAliases>
 
+<<<<<<< HEAD
     <!-- 环境 -->
     <!-- 这个在spring配置文件中配置了 -->
 <!--    <environments default="development">-->
@@ -27,6 +28,27 @@
 <!--            </dataSource>-->
 <!--        </environment>-->
 <!--    </environments>-->
+=======
+    <!--环境-->
+    <environments default="developement">
+        <environment id="developement">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"></property>
+                <property name="url" value="${jdbc.url}"></property>
+                <property name="username" value="${jdbc.username}"></property>
+                <property name="password" value="${jdbc.password}"></property>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--加载映射-->
+    <mappers>
+        <!--<mapper resource="com/example/mapper/AccountMapper.xml"></mapper>-->
+        <package name="com.example.mapper"></package>
+    </mappers>
+
+>>>>>>> 899eac2ff29a92d49bbfa3b4590b12fdd056b634
 
     <!-- 加载映射 -->
     <!-- 这个在spring配置文件中配置了 -->
